@@ -8,6 +8,7 @@ import { researchGroups } from '@/lib/research';
 export const metadata: Metadata = {
   title: 'Research',
   description: 'Research by Wenjun Yu in quantum simulation, quantum characterization and learning, and quantum states and resources.',
+  alternates: { canonical: 'https://wenjunyus.github.io/research' },
 };
 
 export default function Research() {
