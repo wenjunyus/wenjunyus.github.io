@@ -1,4 +1,5 @@
-import Link from 'next/link';
+/* oxlint-disable next/no-html-link-for-pages -- Native links avoid the failing Vinext client router in this static export. */
+
 import { SiteHeader } from '@/components/site-header';
 import { SiteFooter } from '@/components/site-footer';
 import { news, profile, professionalServices } from '@/lib/profile';
@@ -25,7 +26,7 @@ export default function Home() {
               <p>I am a Ph.D. candidate in Computer Science and an HKU Presidential PhD Scholar at the University of Hong Kong, supervised by <a href="https://qizhao-quantum.github.io/">Prof. Qi Zhao</a> and <a href="https://i.cs.hku.hk/~giulio/">Prof. Giulio Chiribella</a>.</p>
               <p>I study quantum algorithms and the theoretical foundations of practical quantum advantage.</p>
               <p>I received my B.Eng. in Computer Science from Tsinghua University, where I studied in the Yao Class.</p>
-              <Link href="/research" className="text-link">Explore my research <span aria-hidden="true">↗</span></Link>
+              <a href="/research" className="text-link">Explore my research <span aria-hidden="true">↗</span></a>
             </div>
           </section>
           <section className="section-row" aria-labelledby="contact-heading">
